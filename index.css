@@ -1,0 +1,33 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --black: #0d0d0d;
+  --white: #ffffff;
+  --g100: #f2f2f0;
+  --g200: #e5e5e2;
+  --g400: #a0a09a;
+  --g600: #6b6b65;
+  --g800: #2a2a26;
+}
+
+html, body {
+  background: var(--white);
+  color: var(--black);
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+button { cursor: pointer; font-family: 'Inter', sans-serif; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-up { animation: fadeUp 0.35s ease forwards; }
+
+@keyframes fillBar {
+  from { width: 0; }
+  to { width: 100%; }
+}
